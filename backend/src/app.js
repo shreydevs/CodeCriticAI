@@ -3,15 +3,15 @@ const aiRoutes=require('./routes/ai.routes');
 const cors=require('cors');
 const app=express();
 
-app.use(cors())
+app.use(cors(
+  {
+    origin: ["https://code-criticai.vercel.app"],
+    methods: ["POST, GET"],
+    credentials:true
+  }
+))
 
-const corsOptions = {
-  origin: "https://code-criticai.vercel.app", // no trailing slash, string not array
-  methods: ["POST", "GET"],
-  credentials: true
-};
 
-app.use(cors(corsOptions));
 
 app.use(express.json());
 
