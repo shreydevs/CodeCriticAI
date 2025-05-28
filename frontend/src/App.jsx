@@ -22,7 +22,7 @@ function App() {
   },[]);
 
 async function reviewCode(){
-  const response=await axios.post('https://code-criticai.vercel.app/', { code })
+  const response=await axios.post('https://code-critic-ai-q873.vercel.app/ai/review', { code })
 
   setReview(response.data);
 }
