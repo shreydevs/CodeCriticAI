@@ -22,7 +22,7 @@ function App() {
   },[]);
 
 async function reviewCode(){
-  const response=await axios.post('http://localhost:5000/ai/review', { code })
+  const response=await axios.post('https://code-criticai.vercel.app/', { code })
 
   setReview(response.data);
 }
