@@ -16,7 +16,27 @@ body,
     width:100%;
 }
 
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
 
+  .left, .right {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .left .review {
+    bottom: 1rem;
+    right: 1rem;
+    width: 90%;
+    left: 5%;
+  }
+}
+.code {
+  overflow-x: auto;
+}
 main{
     height: 100%;
     width:100%;
