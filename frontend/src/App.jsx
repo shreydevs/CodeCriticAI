@@ -22,7 +22,7 @@ function App() {
   },[]);
 
 async function reviewCode(){
-  const response=await axios.post('https://codecriticai.onrender.com', { code })
+  const response=await axios.post('https://codecriticai.onrender.com/ai/review', { code })
 
   setReview(response.data);
 }
