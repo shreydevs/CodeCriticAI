@@ -18,8 +18,11 @@ app.get('/', (req, res) => {
 });
 
 
+
+app.use('/ai', aiRoutes);
+
+
 app.use((req, res) => {
   res.status(404).send('Route not found');
 });
-app.use('/ai', aiRoutes);
 module.exports=app;
