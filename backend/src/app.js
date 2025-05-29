@@ -6,7 +6,7 @@ const app=express();
 app.use(cors(
   {
     origin: ["https://code-criticai.vercel.app"],
-    methods: ["POST, GET"],
+    methods: ["POST, "GET"],
     credentials:true
   }
 ))
