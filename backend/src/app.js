@@ -4,7 +4,7 @@ const cors=require('cors');
 const app=express();
 
 app.use(cors({
-  origin: 'https://code-criticai.vercel.app',
+  origin: 'https://code-critic-ai.vercel.app',
   methods: ['GET', 'POST', 'OPTIONS'],
   credentials: true
 }));
